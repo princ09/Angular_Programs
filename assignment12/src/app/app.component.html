@@ -1,2 +1,4 @@
 <app-navbar></app-navbar>
-<app-book-ride></app-book-ride>
+<app-login *ngIf="!loggedIn" (userLogged)="loggedIn=true"></app-login>
+<p class="text-danger" style="margin: auto;text-align: center;" *ngIf="loggedIn">You Logged In Sucessfully</p>
+<app-book-ride *ngIf="loggedIn"></app-book-ride>

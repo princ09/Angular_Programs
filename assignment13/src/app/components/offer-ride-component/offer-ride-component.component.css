@@ -32,7 +32,7 @@ th{
     border:1px solid #007BFF;
     margin: auto;
     margin-top: 100px;
-    width: 450px;
+    width: 600px;
     box-sizing: border-box;
 }
 .lab{
@@ -49,15 +49,12 @@ h4{
     text-align: left;
 }
 
-button{
-    background-color: #007BFF;
-    color: white;
-}
 
-button{
+
+input[type=submit]{
     background-color: #007BFF;
     color: white;
-    margin-left: 200px;
+    margin-left: 260px;
 }
 .book-filter-main{
     background-color: white;

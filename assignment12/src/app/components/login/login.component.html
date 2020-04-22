@@ -1,1 +1,28 @@
-<p>login works!</p>
+<div class="container">
+    <div class="row">
+        <div class="form_bg">
+          <div class="book-filter-main">
+            <div class="lab"><h4 class="text-center">Login</h4></div> 
+            <form style="margin: 10px;">
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-2 col-form-label"><b>Username</b></label>
+                  <div class="col-sm-10">
+                    <input type="text"  class="form-control" id="staticEmail" placeholder="Username" #username>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" #password>
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <button class="btn" (click)="authenticate(username.value,password.value)">Login</button>
+                </div>
+              </form>
+     </div>
+
+        </div>
+        <p class="text-danger" *ngIf="!validUser">You Entered Wrong Username or Password!!</p>
+      </div>
+    </div>

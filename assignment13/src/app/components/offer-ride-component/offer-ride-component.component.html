@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="form_bg">
+          <div class="book-filter-main">
+            <div class="lab"><h4 class="text-center">Login</h4></div> 
+            <form style="margin: 10px;" #myform = "ngForm" (ngSubmit) = "onSubmit(myform)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" ngModel>
+                  </div>
+                  <div class="form-group">
+                    <label for="location">Start Location</label>
+                    <input type="text" class="form-control" id="location" name="from" placeholder="Enter Location" ngModel>
+                  </div>
+                  <div class="form-group">
+                    <label for="Destination">Destination</label>
+                    <input type="text" class="form-control" id="Destination" name="to" placeholder="Enter Destination" ngModel >
+                  </div>
+                  <div class="form-group">
+                    <label for="cars">Car</label>
+                    <input type="text" class="form-control" id="cars" name="car" placeholder="Enter Car" ngModel>
+                  </div>
+                  <div class="form-group">
+                    <label for="seatAv">Seat Available</label>
+                    <input type="text" class="form-control" id="seatAv" name="seatAv" placeholder="Seat Available" ngModel>
+                  </div>
+                <div class="form-group row">
+                    <input class="btn" type="submit" value="Submit"/>
+                </div>
+              </form>
+              <p class="text-success" style="margin-left: 100px;">{{message}}</p>
+     </div>
+
+        </div>
+      </div>
+    </div>
