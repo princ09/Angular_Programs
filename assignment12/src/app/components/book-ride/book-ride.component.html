@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="form_bg">
+            <div class="lab"><h4 class="text-center">Pool Carz</h4></div> 
+            <div class="book-filter-main">
+                <p>
+                    PoolCarz application is online application which allow user to take ride and also share 
+                    with your friend. did we mention that this app is advertisement free app , Join our best service and
+                    die in our ride Please.
+              
+                </p>
+                <table style="margin: auto; margin-top: 50px;" > 
+                    <td>
+                        <button class="btn" >To Gotham</button>
+                    </td>
+                    <td>
+                        <button class="btn" >From Gotham</button>
+                    </td> <td>
+                        <button class="btn" >Others</button>
+                    </td>
+                </table>
+            
+                <p style="margin:auto;color:#007BFF;text-align: center; margin-top: 10px;">Please Select a Ride</p>
+            </div>
+            <div class="ride-table-main" >
+                <table class="table" border="1">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Start Point</th>
+                            <th>End Point</th>
+                            <th>Seat Available</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    
+                    <tr *ngFor="let ride of rides">
+                        <td>{{ride.from}}</td>
+                        <td>{{ride.to}}</td>
+                        <td>{{ride.seatAv}}</td>
+                    </tr>
+                   
+            
+                </tbody>
+                </table>
+
+
+                <div class="end" style="margin-top: 70px;">
+                    <button class="btn">Offer a rides</button>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </div>

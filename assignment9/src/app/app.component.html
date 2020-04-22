@@ -1,0 +1,11 @@
+<table border="1" >
+  <tr *ngFor="let product of productArr">
+    <td><button (click)="deleteProduct(product)">Delete</button></td>
+    <td >{{product.id}}</td>
+    <td>{{product.productName}}</td>
+    <td>{{product.price}}</td>
+    <td><input type="number" [value]="product.qty" [(ngModel)]="product.qty" (input)="changeTotal(product)" /></td>
+    <td *ngIf="product.qty==0||product.qty==null || product.qty==''" ><p  style="color:red;">Enter Quantity</p></td>
+  </tr>
+</table>
+<p>Your Total Amount :{{totalPrice}}</p><span *ngIf="gttenthou" style="color: red;">You are Eligible for Discount!!</span>

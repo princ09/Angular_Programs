@@ -1,0 +1,11 @@
+<div>
+  <h1>Parent Component</h1>
+  <h2>Select Category</h2>
+  <select #selectedValue (change)='selectedOption=selectedValue.value'>
+    <option>Romance</option>
+    <option>Action</option>
+    <option>Adventure</option>
+  </select>
+ <hr>
+ <app-child [showBook]="selectedOption"></app-child>
+</div>
