@@ -1,0 +1,19 @@
+.main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:75px;
+}
+a{
+    text-decoration: none;
+    color: #FF1493;
+    padding: 16px;
+    font-size: 32px;
+}
+.logo{
+    float: left;
+}
+.logout{
+    float: right;
+}

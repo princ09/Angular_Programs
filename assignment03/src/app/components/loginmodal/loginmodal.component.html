@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="form_bg">
+            <div class="lab"><h4 class="text-center">Login Page</h4></div> 
+            <form>
+                <br/>
+                <div class="form-group">
+                    <label> Username </label>
+                    <input type="text" class="form-control" [(ngModel)]="loginFeild.username" name="username" id="userid" placeholder="User id">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" [(ngModel)]="loginFeild.password" name="password" id="pwd" placeholder="Password">
+                
+                    </div>
+                    <br/>
+                   <div class="align-center">
+                <button type="submit" class="btn btn-default" (click)="authLogin()" id="login">Login</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>

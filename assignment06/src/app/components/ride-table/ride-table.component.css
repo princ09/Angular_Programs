@@ -1,0 +1,25 @@
+.ride-table-main{
+    background-color: white;
+    padding: 5px;
+}
+table{
+    text-align: center;
+}
+thead{
+    text-align: center;
+}
+
+button{
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+}
+
+th{
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+}
+.end{
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+<table style="margin: auto;">
+  <tr>
+    <td>
+      <b><u>Assignment: 4</u></b>
+      <ul style="list-style: none;">
+        <li *ngFor="let imgurl of imgUrlPaths">
+          <img src="{{imgurl}}" width="100px" height="100px" (mouseover)="zoomImageUrl=imgurl" />
+        </li>
+      </ul>
+    </td>
+    <td>
+      <img  src="{{zoomImageUrl}}" width="500px" height="500px"/>
+    </td>
+  </tr>
+  </table>

@@ -1,0 +1,22 @@
+<b><u>Assignment:3</u></b>
+<table>
+  <tr>
+    <td><input type="text" [(ngModel)]="password_one" placeholder="Enter Your Password"/></td>
+    <td>
+      <p *ngIf="password_one.length<4 && password_one!=''">Password is Week</p>
+      <p *ngIf="password_one.length>3 && password_one.length<8">Password is Medium</p>
+      <p *ngIf="password_one.length>=8">Password is Strong</p>
+  
+    </td>
+  </tr>
+<tr>
+  <td><input type="text"  [(ngModel)]="password_two" placeholder="Confirm Your Password"/>
+  </td>
+  <td>
+    <p *ngIf="password_one!='' && password_two!='' && password_one!=password_two">Password Doesn't match</p>
+    <p *ngIf="password_one!='' && password_two!='' && password_one==password_two">Password matches</p>
+  </td>
+</tr>
+ 
+</table>
+
