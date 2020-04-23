@@ -1,0 +1,65 @@
+.ride-table-main{
+    background-color: white;
+    padding: 5px;
+}
+table{
+    text-align: center;
+}
+thead{
+    text-align: center;
+}
+tr:hover{
+    background: #007BFF;
+    color: white;
+}
+button{
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+}
+
+th{
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+}
+.end{
+    text-align: center;
+}
+
+.form_bg {
+    border-radius:5px;
+    border:1px solid #007BFF;
+    margin: auto;
+    margin-top: 100px;
+    width: 450px;
+    box-sizing: border-box;
+}
+.lab{
+    background-color:  #007BFF;
+}
+
+h4{
+    background-color: #007BFF;
+    color: white;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+
+    padding: 5px;
+    text-align: left;
+}
+
+button{
+    background-color: #007BFF;
+    color: white;
+}
+
+button{
+    background-color: #007BFF;
+    color: white;
+    margin-left: 200px;
+}
+.book-filter-main{
+    background-color: white;
+    padding: 0;
+}

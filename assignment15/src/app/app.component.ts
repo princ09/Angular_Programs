@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment14';
-  empToUpdate:any;
-  openForm:boolean = false;
-  openUpdateComponent(empData){
-    this.empToUpdate = empData;
-    this.openForm=true;
-  }
+  title = 'assignment15';
 }

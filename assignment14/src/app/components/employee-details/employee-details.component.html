@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Employee Details</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Employee Id</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Action</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employeeData">
+          <td>{{employee.empId}}</td>
+          <td>{{employee.empName}}</td>
+          <td>{{employee.age}}</td>
+          <td><button class="btn btn-primary" (click)="updateDetail(employee)">Update</button></td>
+
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
